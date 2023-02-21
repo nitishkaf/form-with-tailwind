@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!-- font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left; -->
+
+<body class="font-mono my-16 mx-60">
+    <!-- heading of the form  -->
+    <div class="header mb-12">
+        <div class="header-title text-[#4E5150] font-semibold text-4xl">
+            Checkout
+        </div>
+    </div>
+    <!-- main component of the form  -->
+    <div class="main flex flex-row">
+        <div class="left basis-1/2">
+            <form action="">
+                <div class="form-text font-bold text-lg">
+                    Contact Information
+                </div>
+                <div class="form-group">
+                    <label for="email" class="text-xs">E-mail</label> <br>
+                    <input type="email" class=" form-input rounded-md block border-slate-600 w-[465px] h-14" placeholder="Enter Your Email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="email" placeholder="Enter Your Phone">
+                </div>
+                
+                <div class="form-text">
+                    Shipping Address
+                </div>
+                
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" placeholder="Enter Your Name" Value ="Rodney Cotton">
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" placeholder="Your Address">
+                </div>
+                
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" placeholder="Your City">
+                </div>
+                
+                <div class="form-group">
+                    <div class="left-box">
+                        <label for="country">Country</label>
+                        <select name="country" id="country">
+                            <option value="nepal">Nepal</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="right-box">
+                        <label for="postal-code">Postal Code</label>
+                        <input type="text" placeholder="Your Postal Code">    
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" name="save" id="save">
+                    <label for="text">Save this information for next time</label>
+                </div>
+                
+                <div class="form-group">
+                    <button>Continue</button>
+                </div>
+            </form>
+        </div>
+        <div class="right basis-1/2">
+            <div class="container">
+                <div class="first">
+                    <div class="img-box">
+                        <img src="bag.png" alt="bag">
+                    </div>
+                    <div class="detail-box">
+                        <div class="box-header">
+                            Vintage Backbag
+                        </div>
+                        <div class="box-price">
+                            <span>$54.99</span>
+                            <span>$94.99</span>
+                        </div>
+                        <div class="box-quantity">
+                            <button>-</button>
+                            <span id="quantity">1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="second">
+                    <div class="img-box">
+                        <img src="shoe.png" alt="shoe">
+                    </div>
+                    <div class="detail-box">
+                        <div class="box-header">
+                            Levi Shoes
+                        </div>
+                        <div class="box-price">
+                            <span>$74.99</span>
+                            <span>$124.99</span>
+                        </div>
+                        <div class="box-quantity">
+                            <button>-</button>
+                            <span id="quantity">1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer of the form  -->
+    <script src="app.js"></script>
+</body>
+</html>
