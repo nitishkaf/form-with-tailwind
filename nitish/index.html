@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="./index.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="mt-[64px] ml-[240px] font-mono">
+   <header>
+      <h1 class="text-[36px]">Checkout</h1>
+    </header>
+    <div class="container">
+      <form>
+        <section class="flex flex-col">
+          <h2>Contact Information</h2>
+          <label for="email"> E-mail </label>
+          <input type="email" id="email" placeholder="Enter your email" />
+          <label for="phone"> Phone </label>
+          <input id="phone" type="tel" placeholder="Enter your phone" />
+        </section>
+        <section class="flex flex-col">
+          <h2>Shipping address</h2>
+          <label for="fullname"> Full name </label>
+          <input type="text" placeholder="Full Name" id="fullname" />
+          <label for="address"> Address </label>
+          <input type="text" placeholder="Your address.." id="address" />
+          <label for="city"> City </label>
+          <input id="city" type="text" placeholder="Your city.." />
+
+          <div class="flex flex-row">
+            <div class="flex flex-col">
+          <label for="country"> Country </label>
+          <select name="country" id="country">
+            <option selected disabled>Your country..</option>
+            <option value="usa">United States</option>
+            <option value="nepal">Nepal</option>
+          </select>
+</div>
+
+          <div class="flex flex-col">
+          <label for="postal"> Postal code </label>
+          <input type="number" id="postal" placeholder="Your postal code.." />
+
+          </div>
+        </div>
+
+        <div class="flex flex-row">
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox"> Save this information for next time </label>
+</div>
+        </section>
+        <button
+        class="bg-[#F2994A] text-white" type="submit">Continue</button>
+      </form>
+      <section>
+        <div class="item">
+          <img src="" alt="image here" />
+          <div class="item_description">
+            <h2>Vintage Backbag</h2>
+            <p>
+              <span>$54.99</span>
+              <span>$94.99</span>
+            </p>
+            <div class="item_counter">
+              <button>-</button>
+              <span> 1 </span>
+              <button>+</button>
+            </div>
+          </div>
+        </div>
+        <div class="shipping">
+          <span>Shipping</span>
+          <span>$19</span>
+        </div>
+        <div class="total">
+          <span>Total</span>
+          <span>$148.99</span>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p>
+        created by
+        <span><a href="">username</a> </span>
+        - devChallenges.io
+      </p>
+    </footer>
+</body>
+</html>
