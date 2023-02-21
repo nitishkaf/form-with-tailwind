@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <!-- <link rel="stylesheet" href="./index.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="mt-[64px] ml-[240px] font-mono">
+    <header>
+      <h1 class ="text-[20px] bg-blue">Checkout</h1>
+    </header>
+    <section class="flex flex-col">
+      <form>
+        <h1>Contact information</h1>
+        <label for="email">E-mail</label><br />
+        <input type="text" id="email" name="email" value="Enter your email..." /><br />
+
+        <label for="phone">Phone</label><br />
+        <input type="text" id="lname" name="lname" value="Enter your phone..." /><br /><br />
+        
+        <h1>Shipping address</h1>
+        <label for="fname">Full name</label><br />
+        <input type="text" id="fname" name="fname" value="Rodney cotton" /><br />
+
+        <label for="address">Address</label><br />
+        <input type="text" id="address" name="address" value="your address..." /><br /><br />
+        
+        <label for="city">City</label><br />
+        <input type="text" id="city" name="city" value="your city..." /><br />
+
+        <label for="country">Country</label><br />
+        <input type="text" id="country" name="country" value="Your country..." /><br /><br />
+        
+        <label for="pcode">Postal code</label><br />
+        <input type="text" id="pcode" name="pcode" value="Your postal code..." /><br />
+
+        <input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox">
+        <label for="checkbox"> Save this information for next time</label><br>
+
+        <input type="submit" value="Submit" />
+      </form>
+
+      <section> image </section>
+
+
+    </section>
+
+    <footer></footer>
+  </body>
 </html>
