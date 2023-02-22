@@ -18,8 +18,11 @@
           <h2>Contact Information</h2>
           <label for="email"> E-mail </label>
           <input type="email" id="email" placeholder="Enter your email" />
+          <div class="error text-red-500"></div>
+
           <label for="phone"> Phone </label>
           <input id="phone" type="tel" placeholder="Enter your phone" />
+          <div class="error text-red-500"></div>
         </section>
         <section class="flex flex-col">
           <h2>Shipping address</h2>
@@ -47,6 +50,7 @@
                 id="postal"
                 placeholder="Your postal code.."
               />
+              <div class="error text-red-500"></div>
             </div>
           </div>
 
@@ -90,5 +94,6 @@
         - devChallenges.io
       </p>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
