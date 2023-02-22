@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- <link rel="stylesheet" href="./index.css"> -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./index.css"> -->
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="mt-[64px] ml-[240px] font-mono">
-   <header>
+  </head>
+  <body class="mt-[64px] ml-[240px] font-mono">
+    <header>
       <h1 class="text-[36px]">Checkout</h1>
     </header>
     <div class="container">
@@ -18,8 +18,11 @@
           <h2>Contact Information</h2>
           <label for="email"> E-mail </label>
           <input type="email" id="email" placeholder="Enter your email" />
+          <div class="error text-red-500"></div>
+
           <label for="phone"> Phone </label>
           <input id="phone" type="tel" placeholder="Enter your phone" />
+          <div class="error text-red-500"></div>
         </section>
         <section class="flex flex-col">
           <h2>Shipping address</h2>
@@ -32,28 +35,31 @@
 
           <div class="flex flex-row">
             <div class="flex flex-col">
-          <label for="country"> Country </label>
-          <select name="country" id="country">
-            <option selected disabled>Your country..</option>
-            <option value="usa">United States</option>
-            <option value="nepal">Nepal</option>
-          </select>
-</div>
+              <label for="country"> Country </label>
+              <select name="country" id="country">
+                <option selected disabled>Your country..</option>
+                <option value="usa">United States</option>
+                <option value="nepal">Nepal</option>
+              </select>
+            </div>
 
-          <div class="flex flex-col">
-          <label for="postal"> Postal code </label>
-          <input type="number" id="postal" placeholder="Your postal code.." />
-
+            <div class="flex flex-col">
+              <label for="postal"> Postal code </label>
+              <input
+                type="number"
+                id="postal"
+                placeholder="Your postal code.."
+              />
+              <div class="error text-red-500"></div>
+            </div>
           </div>
-        </div>
 
-        <div class="flex flex-row">
-          <input type="checkbox" id="checkbox" />
-          <label for="checkbox"> Save this information for next time </label>
-</div>
+          <div class="flex flex-row">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox"> Save this information for next time </label>
+          </div>
         </section>
-        <button
-        class="bg-[#F2994A] text-white" type="submit">Continue</button>
+        <button class="bg-[#F2994A] text-white" type="submit">Continue</button>
       </form>
       <section>
         <div class="item">
@@ -88,5 +94,6 @@
         - devChallenges.io
       </p>
     </footer>
-</body>
+    <script src="./main.js"></script>
+  </body>
 </html>
