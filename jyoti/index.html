@@ -5,31 +5,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e3b3ee800e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
 
-<body>
+<body class="mt-[64px] ml-[240px] mr-[240px]">
+
     <header>
-        <h2>Checkout</h2>
+        <h1 class="text-[36px]">Checkout</h1>
         <!-- <img src="/checkout-page-master/photo.png"> -->
     </header>
 
-    <section>
+    <section class="flex">
+        <section>
 
-        <form>
-            <h2>Contact Information</h2>
-            <label for="Email">Email</label>
-            <input type="email" placeholder="Enter your email">
-            <label for="Password">Password</label>
-            <input type="password" placeholder="Enter your password">
-            <h2>Shipping address</h2>
-            <label for="Full Name"> Full Name</label>
+            <form>
+                <h2 class="text-[24px] p-2">Contact Information</h2>
+                <div class="flex flex-col">
+                    <div class="flex flex-col">
+                        <label for="Email" class="p-2">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email..."
+                            class="p-2 box-border h-15 border-2 p-4 rounded-3xl">
+                        <div class="error text-red-500"></div>
+                    </div>
+                    <label for=" phone" class="p-2">phone</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone..."
+                        class="p-2 box-border h-15 w-15 border-2 p-4 rounded-3xl">
+                    <div class="error text-red-500">
+                    </div>
 
-        </form>
+                    <h2 class="text-[24px] p-2 mt-6">Shipping address</h2>
+                    <label for="Full Name" class="p-2"> Full Name</label>
+                    <input type="text" id="name" placeholder="Rodney Cotton"
+                        class="p-2 box-border h-15 w-15 border-2 p-4 rounded-3xl">
+                    <div class="error text-red-500"></div>
+                    <label for="Address" class="p-2"></label>
+                    <input type="text" placeholder="Your address.."
+                        class="p-2 box-border h-15 w-15 border-2 p-4 rounded-3xl">
+                    <label for="City" class="p-2"></label>
+                    <input type="text" placeholder="Your city.."
+                        class="p-2 box-border h-15 w-15 border-2 p-4 rounded-3xl">
+                    <div class="flex align-center justify-between mt-4">
+                        <div>
+                            <label for="Country" class="p-2"></label>
+                            <select class="box-border h-15 w-15 border-2 p-4 rounded-3xl">
+                                <option value="" disabled selected>Your country</option>
+                                <option value="nepal">Nepal</option>></option>
+                                <option value="usa">USA</option>></option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="Postal code" class="p-2"></label>
+                            <input type="text" id="zip" placeholder="your postal code.."
+                                class="box-border h-15 w-15 border-2 p-4 rounded-3xl">
+                            <div class="error text-red-500"></div>
+                        </div>
 
+                    </div>
+
+                    <div class="flex">
+                        <input type="checkbox">
+                        <labe for="checkbox" class="p-2">Save this information for next time</labe>
+
+                    </div>
+                    <button type="submit"
+                        class="p-1 bg-amber-500 text-white text-3xl w-40 text-center rounded-3xl mr-4">Continue</button>
+
+                </div>
+
+            </form>
+
+        </section>
+        <section class="bg-[#e6eafc] w-full h-1/2 ml-10 rounded-2xl">
+            <section class="flex align-center justify-center">
+                <div class="m-2">
+                    <img class="rounded-3xl w-3/5" src="./photo1.png">
+                </div>
+                <div>
+                    <h5 class="text-sm">Vintage Backpack</h5>
+                    <p>
+                        <span class=" text-sm text-orange-500">$54.99</span>
+                        <span class="text-sm line-through">$94.99</span>
+                    </p>
+                    <div class="flex align-center justify-between mt-4 mr-5 h-5 border-2 p-4 rounded-lg border-black">
+                        <button>-</button>
+                        <span> 1 </span>
+                        <button>+</button>
+                    </div>
+                </div>
+
+
+
+
+            </section>
+
+
+        </section>
 
     </section>
+
+
+    <script src="./main.js"></script>
 
 </body>
 
