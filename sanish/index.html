@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-mono my-16 mx-40">
+    <!-- heading of the form  -->
+    <div class="header mb-12">
+        <div class="header-title text-[#4E5150] font-semibold text-4xl">
+            Checkout
+        </div>
+    </div>
+    <!-- main component of the form  -->
+    <div class="main flex flex-row">
+        <div class="left basis-1/2 mx-10">
+            <form action="">
+                <div class="form-text font-bold text-lg">
+                    Contact Information
+                </div>
+                <div class="form-group mb-2">
+                    <label for="email" class="text-xs text-[#4E5150] font-bold">E-mail</label> <br>
+                    <div class="mt-1 flex rounded-xl shadow-sm">
+                        <span class="inline-flex items-center px-3 rounded-l-xl border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
+                            <i class="fa-regular fa-envelope"></i>
+                        </span>
+                        <input type="text" name="email" id="email" class="focus:ring-indigo-500 border focus:border-indigo-500 flex-1 block w-[465px] h-14 rounded-none rounded-r-xl sm:text-sm border-gray-300  placeholder:px-5" placeholder="Enter Your Email">
+                    </div>
+                </div>
+                
+                <div class="form-group mb-2">
+                    <label for="phone" class="text-xs text-[#4E5150] font-bold">Phone</label> <br>
+                    <div class="mt-1 flex rounded-xl shadow-sm">
+                        <span class="inline-flex items-center px-3 rounded-l-xl border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <input type="text" name="phone" id="phone" class="focus:ring-indigo-500 border focus:border-indigo-500 flex-1 block w-[465px] h-14 rounded-none rounded-r-xl sm:text-sm border-gray-300  placeholder:px-5" placeholder="Enter Your Phone">
+                    </div>
+                </div>
+                
+                
+                <div class="form-text font-bold text-lg">
+                    Shipping Address
+                </div>
+                
+                <div class="form-group mb-2">
+                    <label for="fullName" class="text-xs text-[#4E5150] font-bold">Full Name</label> <br>
+                    <div class="mt-1 flex rounded-xl shadow-sm">
+                        <span class="inline-flex items-center px-3 rounded-l-xl border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        <input type="text" name="fullName" id="fullName" class="focus:ring-indigo-500 border focus:border-indigo-500 flex-1 block w-[465px] h-14 rounded-none rounded-r-xl sm:text-sm border-gray-300  placeholder:px-5" placeholder="Enter Your Name" value="Rodney Cotton">
+                    </div>
+                </div>
+                <div class="form-group mb-2">
+                    <label for="address" class="text-xs text-[#4E5150] font-bold">Address</label> <br>
+                    <div class="mt-1 flex rounded-xl shadow-sm">
+                        <span class="inline-flex items-center px-3 rounded-l-xl border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+                        <input type="text" name="address" id="address" class="focus:ring-indigo-500 border focus:border-indigo-500 flex-1 block w-[465px] h-14 rounded-none rounded-r-xl sm:text-sm border-gray-300  placeholder:px-5" placeholder="Your Address">
+                    </div>
+                </div>
+                <div class="form-group mb-2">
+                    <label for="city" class="text-xs text-[#4E5150] font-bold">City</label> <br>
+                    <div class="mt-1 flex rounded-xl shadow-sm">
+                        <span class="inline-flex items-center px-3 rounded-l-xl border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
+                            <i class="fa-solid fa-city"></i>
+                        </span>
+                        <input type="text" name="city" id="city" class="focus:ring-indigo-500 border focus:border-indigo-500 flex-1 block w-[465px] h-14 rounded-none rounded-r-xl sm:text-sm border-gray-300  placeholder:px-5" placeholder="Enter Your City">
+                    </div>
+                </div>
+                
+                <div class="form-group flex mb-2">
+                    <div class="left-box w-1/2">
+                        <label for="country" class="text-xs text-[#4E5150] font-bold">Country</label> <br>
+                        <div class="mt-1 flex rounded-xl shadow-sm">
+                            <span class="inline-flex items-center px-3 rounded-l-xl border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
+                                <i class="fa-solid fa-globe"></i>
+                            </span>
+                            <select name="country" id="country"  class="focus:ring-indigo-500 border focus:border-indigo-500 flex-1 block h-14 rounded-none rounded-r-xl sm:text-sm border-gray-300  placeholder:px-5">
+                                <option value="nepal">Nepal</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="right-box w-1/2">
+                        <label for="postalcode" class="text-xs text-[#4E5150] font-bold">Postal Code</label> <br>
+                        <div class="mt-1 flex rounded-xl shadow-sm">
+                            <span class="inline-flex items-center px-3 rounded-l-xl border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
+                                <i class="fa-solid fa-envelopes-bulk"></i>
+                            </span>
+                            <input type="text" name="city" id="city" class="focus:ring-indigo-500 border focus:border-indigo-500 flex-1 block h-14 rounded-none rounded-r-xl sm:text-sm border-gray-300  placeholder:px-5" placeholder="Enter Your Postal Code">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group  mb-2 mt-3">
+                    <input type="checkbox" name="save" id="save" class="w-[21px] h-[21px]">
+                    <label for="text" class="text-[#4E5150]">Save this information for next time</label>
+                </div>
+                
+                <div class="form-group mb-2">
+                    <button class="rounded-lg bg-[#F2994A] text-white w-[166px] h-[54px] float-right">Continue</button>
+                </div>
+            </form>
+        </div>
+        <div class="right basis-1/2 mx-10">
+            <div class="container bg-[#F2F2F2] w-[383px] h-[535px] rounded-lg">
+                <div class="first flex pt-[50px]">
+                    <div class="img-box flex-1 h-[135px] w-[175px]">
+                        <img src="/sanish/image/bag.jpg" class="object-contain  rounded-lg h-[135px] w-[175px]" alt="bag">
+                    </div>
+                    <div class="detail-box flex-1">
+                        <div class="box-header text-lg">
+                            Vintage Backbag
+                        </div>
+                        <div class="box-price">
+                            <span class="text-[#F2994A]">$54.99</span>
+                            <span class="line-through">$94.99</span>
+                        </div>
+                        <div class="box-quantity rounded-lg border-2 h-[52px] w-[134px] mt-3 flex">
+                            <button class="flex-1 border-2">-</button>
+                            <span class="flex-1 text-center border-2 pt-2" id="quantity">1</span>
+                            <button class="flex-1 border-2">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="second flex pt-[50px]">
+                    <div class="img-box flex-1 h-[135px] w-[175px]">
+                        <img src="/sanish/image/bag.jpg" class="object-contain  rounded-lg h-[135px] w-[175px]" alt="shoe">
+                    </div>
+                    <div class="detail-box flex-1">
+                        <div class="box-header text-lg">
+                            Levi Shoe
+                        </div>
+                        <div class="box-price">
+                            <span class="text-[#F2994A]">$74.99</span>
+                            <span class="line-through">$124.99</span>
+                        </div>
+                        <div class="box-quantity rounded-lg border-2 h-[52px] w-[134px] mt-3 flex">
+                            <button class="flex-1 border-2">-</button>
+                            <span class="flex-1 text-center border-2 pt-2" id="quantity">1</span>
+                            <button class="flex-1 border-2">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 divide-y border-b-cyan-900 p-[50px]">
+                    <div class="pt-[20px] pb-[5px]"> 
+                        <div class="float-left">Shipping</div> 
+                        <div class="float-right">$19</div> 
+                    </div>
+                    <div class="pt-[20px]"> 
+                        <div class="float-left">Total</div> 
+                        <div class="float-right">$149.98</div> 
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- footer of the form  -->
+    <script src="app.js"></script>
+</body>
+</html>
