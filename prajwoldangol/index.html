@@ -31,7 +31,7 @@
 <body class="font-['Montserrat']">
     <header class="mt-8">
         <div class="container mx-auto px-3 lg:w-[960px]">
-            <h1 class="text-2xl text-[#4E5150] ">Checkout</h1>
+            <h1 class="text-2xl text-[#4E5150] md:text-3xl">Checkout</h1>
         </div>
 
     </header>
@@ -46,17 +46,17 @@
                                     class="max-w-[160px] h-[124px]  rounded-2xl md:max-w-[175px] md:h-[135px] ">
                             </div>
 
-                            <div class="item flex flex-col justify-between">
+                            <div class="item flex flex-col justify-between min-w-[145px] ml-5">
                                 <div class="item-info">
-                                    <a href="#" class="item-title block text-xs">Vintage Bagpack</a>
-                                    <div class="price-wrap mt-1 flex justify-around items-center">
+                                    <a href="#" class="item-title block text-xs md:text-base">Vintage Bagpack</a>
+                                    <div class="price-wrap mt-1 flex justify-start items-center">
 
-                                        <span class="item-price text-sm text-[#F2994A]">$54.99</span>
-                                        <del class="text-[10px] mt-0.5">$94.99</del>
+                                        <span class="item-price text-sm text-[#F2994A] md:text-base">$54.99</span>
+                                        <del class="text-[10px] mt-0.5 ml-2 md:text-sm md:mt-0">$94.99</del>
                                     </div>
                                 </div>
                                 <div
-                                    class="item-quantity border-solid border-2 border-[#828282] rounded-2xl mt-5 flex justify-between items-center px-3 py-3.5 text-base">
+                                    class="item-quantity border-solid border-2 border-[#828282] rounded-2xl mt-5 flex justify-between items-center px-3 py-3.5 text-base max-w-[122px] md:max-w-[134px] ">
                                     <button class="bg-[#E0E0E0] w-5 text-[20px] text-[#828282] leading-5">-</button>
                                     <span class="item-count">1</span>
                                     <button class="bg-[#E0E0E0] w-5 text-[20px] text-[#828282] leading-5">+</button>
@@ -69,17 +69,17 @@
                                     class="max-w-[160px] h-[124px] rounded-2xl  md:max-w-[175px] md:h-[135px]">
                             </div>
 
-                            <div class="item flex flex-col justify-between">
+                            <div class="item flex flex-col justify-between min-w-[145px] ml-5">
                                 <div class="item-info">
-                                    <a href="#" class="item-title block text-xs">Vintage Bagpack</a>
-                                    <div class="price-wrap mt-1 flex justify-around items-center">
+                                    <a href="#" class="item-title block text-xs md:text-base">Levi Shoes</a>
+                                    <div class="price-wrap mt-1 flex justify-start items-center">
 
-                                        <span class="item-price text-sm text-[#F2994A]">$54.99</span>
-                                        <del class="text-[10px] mt-1">$94.99</del>
+                                        <span class="item-price text-sm text-[#F2994A] md:text-base">$54.99</span>
+                                        <del class="text-[10px] mt-1 ml-2 md:text-sm md:mt-0">$94.99</del>
                                     </div>
                                 </div>
                                 <div
-                                    class="item-quantity border-solid border-2 border-[#828282] rounded-2xl mt-5 flex justify-between items-center px-3 py-3.5 text-base">
+                                    class="item-quantity border-solid border-2 border-[#828282] rounded-2xl mt-5 flex justify-between items-center px-3 py-3.5 text-base max-w-[122px] md:max-w-[134px] ">
                                     <button class="bg-[#E0E0E0] w-5 text-[20px] text-[#828282] leading-5">-</button>
                                     <span class="item-count">2</span>
                                     <button class="bg-[#E0E0E0] w-5 text-[20px] text-[#828282] leading-5">+</button>
@@ -87,7 +87,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item-cost mt-20 text-[#333333] text-[14px]">
+                    <div class="item-cost mt-20 text-[#333333] text-[14px] md:text-[18px]">
                         <div class="cost-info flex justify-between border-t-2 border-[#BDBDBD] leading-9">
                             <span>Shipping</span>
                             <span>$19</span>
@@ -101,63 +101,64 @@
                 <div class="checkout-form sm:row-start-1 mt-5 px-3 mb-20">
                     <form action="#">
                         <div class="contact-card">
-                            <h2 class="text-[14px] text-[#333333]">Contact Information</h2>
+                            <h2 class="text-[14px] text-[#333333] md:text-[18px]">Contact Information</h2>
 
                             <div class="form-item mt-5 relative">
-                                <label for="email" class=" text-[10px] text-[#828282] block">E-mail
+                                <label for="email" class=" text-[10px] text-[#828282] block md:text-[12px]">E-mail
                                 </label>
                                 <i class="fa-solid fa-envelope w-[15px] text-[#828282] absolute left-3 bottom-2.5"></i>
                                 <input type="email" name="email" id="email"
-                                    class="border-solid border-[1px] border-[#828282] rounded-lg w-full h-10 pl-9 placeholder:text-[#828282] placeholder:text-[12px] focus:outline-0 placeholder:transition placeholder:duration-150 placeholder:ease-in-out focus:placeholder:-translate-y-1"
+                                    class="border-solid border-[1px] border-[#828282] rounded-lg w-full h-10 pl-9 placeholder:text-[#828282] text-xs text-[#333333] placeholder:text-[12px] focus:outline-0 placeholder:transition placeholder:duration-150 placeholder:ease-in-out focus:placeholder:-translate-y-1 md:text-base"
                                     placeholder=" Enter your email... ">
 
                             </div>
                             <div class="form-item mt-5 relative">
-                                <label for="phone" class=" text-[10px] text-[#828282] block"> Phone
+                                <label for="phone" class=" text-[10px] text-[#828282] block md:text-[12px]"> Phone
                                 </label>
                                 <i class="fa-solid fa-phone w-[15px] text-[#828282] absolute left-3 bottom-2.5"></i>
                                 <input type="phone" name="phone" id="phone"
-                                    class="border-solid border-[1px] border-[#828282] rounded-lg w-full h-10 pl-9 placeholder:text-[#828282] placeholder:text-[12px] focus:outline-0 placeholder:transition placeholder:duration-150 placeholder:ease-in-out focus:placeholder:-translate-y-1"
+                                    class="border-solid border-[1px] border-[#828282] rounded-lg w-full h-10 pl-9 placeholder:text-[#828282] text-xs text-[#333333] placeholder:text-[12px] focus:outline-0 placeholder:transition placeholder:duration-150 placeholder:ease-in-out focus:placeholder:-translate-y-1 md:text-base"
                                     placeholder=" Enter your phone... ">
 
                             </div>
 
                         </div>
                         <div class="contact-card mt-14 ">
-                            <h2 class="text-[14px] text-[#333333]">Shipping address</h2>
+                            <h2 class="text-[14px] text-[#333333] md:text-[18px]">Shipping address</h2>
                             <div class="form-item mt-4 relative">
-                                <label for="fullname" class=" text-[10px] text-[#828282] block"> Fullname
+                                <label for="fullname" class=" text-[10px] text-[#828282] block md:text-[12px]"> Fullname
                                 </label>
                                 <i
                                     class="fa-solid fa-user-circle w-[15px] text-[#828282] absolute left-3 bottom-2.5"></i>
                                 <input type="fullname" name="fullname" id="fullname"
-                                    class="border-solid border-[1px] border-[#828282] rounded-lg w-full h-10 pl-9 placeholder:text-[#828282] placeholder:text-[12px] focus:outline-0 placeholder:transition placeholder:duration-150 placeholder:ease-in-out focus:placeholder:-translate-y-1"
+                                    class="border-solid border-[1px] border-[#828282] rounded-lg w-full h-10 pl-9 placeholder:text-[#828282] text-xs text-[#333333] placeholder:text-[12px] focus:outline-0 placeholder:transition placeholder:duration-150 placeholder:ease-in-out focus:placeholder:-translate-y-1 md:text-base"
                                     placeholder=" Enter your fullname... ">
 
                             </div>
                             <div class="form-item mt-5 relative">
-                                <label for="address" class=" text-[10px] text-[#828282] block"> Address
+                                <label for="address" class=" text-[10px] text-[#828282] block md:text-[12px]"> Address
                                 </label>
                                 <i class="fa-solid fa-house w-[15px] text-[#828282] absolute left-3 bottom-2.5"></i>
                                 <input type="address" name="address" id="address"
-                                    class="border-solid border-[1px] border-[#828282] rounded-lg w-full h-10 pl-9 placeholder:text-[#828282] placeholder:text-[12px] focus:outline-0 placeholder:transition placeholder:duration-150 placeholder:ease-in-out focus:placeholder:-translate-y-1"
+                                    class="border-solid border-[1px] border-[#828282] rounded-lg w-full h-10 pl-9 placeholder:text-[#828282] text-xs text-[#333333] placeholder:text-[12px] focus:outline-0 placeholder:transition placeholder:duration-150 placeholder:ease-in-out focus:placeholder:-translate-y-1 md:text-base"
                                     placeholder=" Enter your address... ">
 
                             </div>
 
 
                             <div class="form-item mt-5 relative">
-                                <label for="city" class=" text-[10px] text-[#828282] block"> City
+                                <label for="city" class=" text-[10px] text-[#828282] block md:text-[12px]"> City
                                 </label>
                                 <i class="fa-solid fa-city w-[15px] text-[#828282] absolute left-3 bottom-2.5"></i>
                                 <input type="city" name="city" id="city"
-                                    class="border-solid border-[1px] border-[#828282] rounded-lg w-full h-10 pl-9 placeholder:text-[#828282] placeholder:text-[12px] focus:outline-0 placeholder:transition placeholder:duration-150 placeholder:ease-in-out focus:placeholder:-translate-y-1"
+                                    class="border-solid border-[1px] border-[#828282] rounded-lg w-full h-10 pl-9 placeholder:text-[#828282] text-xs text-[#333333] placeholder:text-[12px] focus:outline-0 placeholder:transition placeholder:duration-150 placeholder:ease-in-out focus:placeholder:-translate-y-1 md:text-base"
                                     placeholder=" Enter your city... ">
 
                             </div>
                             <div class="form-item two-col mt-5 grid grid-cols-2 gap-x-6">
                                 <div class="form-item relative">
-                                    <label for="country" class=" text-[10px] text-[#828282] block"> Country
+                                    <label for="country" class=" text-[10px] text-[#828282] block md:text-[12px]">
+                                        Country
                                     </label>
                                     <i
                                         class="fa-solid fa-earth-americas w-[15px] text-[#828282] absolute left-3 bottom-2.5"></i>
@@ -174,12 +175,12 @@
 
                                 <div class="form-item relative">
 
-                                    <label for="postal" class=" text-[10px] text-[#828282] block"> Postal
+                                    <label for="postal" class=" text-[10px] text-[#828282] block md:text-[12px]"> Postal
                                     </label>
                                     <i
                                         class="fa-solid fa-envelopes-bulk w-[15px] text-[#828282] absolute left-3 bottom-2.5"></i>
                                     <input type="postal" name="postal" id="postal"
-                                        class="border-solid border-[1px] border-[#828282] rounded-lg w-full h-10 pl-9 placeholder:text-[#828282] placeholder:text-[12px] placeholder:transition placeholder:duration-150 placeholder:ease-in-out focus:outline-0 focus:placeholder:-translate-y-1"
+                                        class="border-solid border-[1px] border-[#828282] rounded-lg w-full h-10 pl-9 placeholder:text-[#828282] text-xs text-[#333333] placeholder:text-[12px] placeholder:transition placeholder:duration-150 placeholder:ease-in-out focus:outline-0 focus:placeholder:-translate-y-1 md:text-base"
                                         placeholder=" Your Postal Code... ">
                                 </div>
                             </div>
